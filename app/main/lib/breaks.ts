@@ -322,6 +322,7 @@ export function checkIdle(): boolean {
   ) {
     postponedCount = 0;
     breakTime = null;
+    idleStart = null;
     log.info("Break timer reset [screen-unlock]");
     scheduleNextBreak();
   }
